@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zihuan Wang — Undergraduate at China Agricultural University. Research interests in vision-language-action models, evaluation, and learning from experience.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Zihuan Wang · 王子欢</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="site-header">
+      <a class="wordmark" href="#main" aria-label="Zihuan Wang, back to top">ZW<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#more" class="more-link">Other Research <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="intro" aria-labelledby="name">
+        <div class="intro-copy">
+          <h1 id="name">Zihuan Wang <span lang="zh-CN">王子欢</span></h1>
+          <p class="bio">I'm an undergraduate in <strong>Agricultural Intelligent Equipment Engineering</strong> at the College of Engineering, China Agricultural University. I enrolled in <strong>September 2024</strong> and expect to graduate in <strong>June 2028</strong>.</p>
+          <p class="bio">My research focuses on <strong>vision-language-action models</strong> and <strong>robot learning</strong>. I'm interested in evaluating robot capabilities and understanding when past experience remains useful.</p>
+          <div class="affiliation">
+            <img class="lab-logo" src="assets/images/leap-lab.png" alt="LEAP — Learning and Perception Lab" width="1763" height="1249" decoding="async">
+            <h2 class="intro-subheading">At Tsinghua LEAP</h2>
+            <p class="bio">Since <strong>March 2026</strong>, I've been a research intern at <a href="https://www.leaplab.ai/" target="_blank" rel="noopener noreferrer">LEAP Lab</a>, working with <a href="https://gaohuang-net.github.io/" target="_blank" rel="noopener noreferrer">Prof. Gao Huang</a> at Tsinghua University.</p>
+          </div>
+          <div class="contact" aria-label="Contact and profiles">
+            <div class="contact-links">
+              <a href="mailto:willwangzihuan@gmail.com">Email <span aria-hidden="true">↗</span></a>
+              <span class="link-divider" aria-hidden="true">/</span>
+              <a href="https://github.com/WillWangZiHuan" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="contact-details">
+              <p><a href="mailto:willwangzihuan@gmail.com">willwangzihuan@gmail.com</a></p>
+              <p><a href="https://github.com/WillWangZiHuan" target="_blank" rel="noopener noreferrer">github.com/WillWangZiHuan</a></p>
+            </div>
+          </div>
+        </div>
+        <figure class="portrait">
+          <img src="assets/images/portrait.jpg" alt="Zihuan Wang at IGARSS 2026" width="2316" height="3088" fetchpriority="high">
+        </figure>
+      </section>
+
+      <section class="research-interests" aria-labelledby="interests-title">
+        <div class="section-heading">
+          <h2 id="interests-title">Research interests</h2>
+          <p>Looking ahead</p>
+        </div>
+        <div class="directions">
+          <div>
+            <h3>VLA benchmarking &amp; evaluation</h3>
+            <p>I want to understand what evidence supports comparing and choosing robot policies. This means studying how tasks, initial conditions, perturbations, execution protocols, metrics, and decision rules shape what an evaluation can tell us.</p>
+          </div>
+          <div>
+            <h3>Experience &amp; post-training</h3>
+            <p>When tasks or conditions change, which past experiences remain useful, and which become misleading? I'm interested in post-training that teaches policies to selectively reuse useful experience, suppress what no longer applies, and update their judgments with new evidence.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="research-section" aria-labelledby="research-title">
+        <div class="section-heading">
+          <h2 id="research-title">Research at LEAP</h2>
+          <p>Mar. 2026 — present</p>
+        </div>
+        <p class="section-note">Understanding what success rates tell us about robot policies.</p>
+
+        <article class="paper" aria-labelledby="icra-title">
+          <a class="paper-figure" href="assets/images/icra.webp" data-figure data-caption="Figure 1. Matched response profiling for VLA evaluation. The schematic contrasts reference-count summaries with task-specific profiles over controlled visual changes. The camera example uses 12 matched initial states per level. OpenVLA-OFT and X-VLA each achieve 458/480 clean successes but differ under visual changes; curves show suite-balanced means and ribbons show 95% matched state-block bootstrap intervals. Annotated gaps are X-VLA minus OpenVLA-OFT, in percentage points." aria-label="Enlarge Figure 1 from Beyond Clean Success">
+            <img src="assets/images/icra.webp" alt="Matched response profiling: equal clean success, different responses across resolution, camera angle, and blur." width="3072" height="2274" decoding="async">
+            <span class="figure-hint" aria-hidden="true">View figure ↗</span>
+          </a>
+          <div class="paper-copy">
+            <p class="paper-venue">ICRA 2027 <span class="status">Submitted</span></p>
+            <h3 id="icra-title"><a href="assets/papers/icra.pdf" target="_blank" rel="noopener">Beyond Clean Success: Matched Response Profiling for Factor-Conditioned VLA Evaluation</a></h3>
+            <p class="authors"><strong>Zihuan Wang</strong> et al.</p>
+            <p class="paper-summary">Matched response profiles reveal task and condition differences that aggregate success rates can hide.</p>
+            <div class="paper-links"><a href="assets/papers/icra.pdf" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="paper" aria-labelledby="iros-title">
+          <a class="paper-figure poster-preview" href="assets/images/iros-poster.webp" data-figure data-caption="Robust to What? Original A0 poster for the IROS 2026 AIM-Ctrl Workshop. Zihuan Wang, Chi Bene Chen, and Gao Huang · Tsinghua University. Preview rendered from the original PDF; use the Poster PDF link for the full-resolution document." aria-label="Enlarge the IROS 2026 workshop poster">
+            <img src="assets/images/iros-poster.webp" alt="Original IROS poster: matched outcomes, shifted success, and the role of execution protocols in VLA evaluation." width="1557" height="2200" loading="lazy" decoding="async">
+            <span class="figure-hint" aria-hidden="true">View poster ↗</span>
+          </a>
+          <div class="paper-copy">
+            <p class="paper-venue">IROS 2026 · AIM-Ctrl Workshop <span class="status">Poster</span></p>
+            <h3 id="iros-title"><a href="assets/papers/iros.pdf" target="_blank" rel="noopener">Robust to What? Interpreting Shifted Success in Executable Vision-Language-Action Policies</a></h3>
+            <p class="authors"><strong>Zihuan Wang</strong>, Chi Bene Chen, Gao Huang</p>
+            <p class="paper-summary">Event, reference construction, and execution protocol determine which reliability claim a shifted success rate supports.</p>
+            <div class="paper-links"><a href="assets/papers/iros.pdf" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a><a href="assets/papers/iros-poster.pdf" target="_blank" rel="noopener">Poster PDF <span aria-hidden="true">↗</span></a><a href="assets/images/iros.webp" data-figure data-caption="Figure 1. Evaluation constructions for interpreting shifted VLA success. Left: clean and dark-table appearance conditions; base and alternate cohorts share 10 of 20 states, while clean/dark outcomes in the base cohort are matched by state index. Right: 50 keys per checkpoint match task, initial state, policy seed, and a step-30 event; the target moves 2.5 cm. Native and clear-and-re-query execution give different response opportunities. The paired outcome table distinguishes retained success, clean-only loss, intervention-only success, and joint failure, which a single marginal success rate combines." aria-label="Enlarge Figure 1 from Robust to What?">Figure <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+      </section>
+
+      <section id="experience" class="experience-section" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <h2 id="experience-title">Industry experience</h2>
+          <p>Mar. — Aug. 2026</p>
+        </div>
+        <article class="experience-entry" aria-labelledby="anyverse-title">
+          <img class="company-logo" src="assets/images/anyverse-dynamics.png" alt="Anyverse Dynamics logo" width="3190" height="667" loading="lazy" decoding="async">
+          <div class="experience-copy">
+            <h3 id="anyverse-title"><a href="https://anyverse.com/" target="_blank" rel="noopener noreferrer">Anyverse Dynamics <span lang="zh-CN">无界动力</span></a></h3>
+            <p class="experience-role">Algorithm Intern</p>
+            <p>I worked on VLA-based robot manipulation for a seat-belt inspection task, focusing on fine alignment and insertion.</p>
+          </div>
+        </article>
+      </section>
+
+      <details id="more" class="other-side">
+        <summary>
+          <span class="more-heading">Other Research</span>
+          <span class="more-toggle"><span class="when-closed">4 papers</span><span class="when-open">Hide</span><span class="plus" aria-hidden="true"></span></span>
+        </summary>
+        <div class="more-content">
+          <p class="other-intro">My early undergraduate research focused on <strong>remote sensing and intelligent agriculture</strong>. I studied grassland vegetation forecasting from satellite time series and maize disease and yield analysis from UAV imagery, with an emphasis on spatiotemporal modeling and efficient visual models.</p>
+          <p class="other-intro">The four papers below grew out of this work. They gave me experience in developing models, designing experiments, interpreting results, and writing research papers. This experience provides a foundation for my current research in robot learning and evaluation.</p>
+
+          <article class="paper" aria-labelledby="jstars-title">
+            <a class="paper-figure" href="assets/images/jstars.webp" data-figure data-caption="Figure 3. Reliability-Aware Attention for annual grassland NDVI forecasting from Landsat sequences. QA-retained observation counts form relative support values, which condition token gating, attention key bias, and value gating. The framework predicts annual ΔNDVI while preserving content-dependent interactions; the support operations add no trainable parameters. This is a method schematic, not a result plot." aria-label="Enlarge the Reliability-Aware Attention framework">
+              <img src="assets/images/jstars.webp" alt="Landsat forecasting pipeline with observation-support token gating, key bias, and value gating." width="2200" height="1026" loading="lazy" decoding="async">
+              <span class="figure-hint" aria-hidden="true">View figure ↗</span>
+            </a>
+            <div class="paper-copy">
+              <p class="paper-venue">IEEE J-STARS · 2026 <span class="status">Accepted</span></p>
+              <h3 id="jstars-title">Spatiotemporal Prediction of Grassland NDVI Dynamics Under Reduced Observation Support via Reliability-Aware Attention</h3>
+              <p class="authors"><strong>Zihuan Wang</strong>, Chenyu Zhou, Fangyu He, Jianxi Huang, Tianyi Wang</p>
+              <p class="paper-summary">QA-retained observation counts guide attention for grassland NDVI forecasting across geographic holdouts.</p>
+            </div>
+          </article>
+
+          <article class="paper" aria-labelledby="symbiomamba-title">
+            <a class="paper-figure" href="assets/images/symbiomamba.webp" data-figure data-caption="Figure 2. UAV data acquisition for SymbioMamba across the Hetao Irrigation District and Jungar Banner in Inner Mongolia. A DJI Matrice 300 RTK with a Zenmuse H20T camera acquires maize imagery at 30–50 m flight altitude and 1.5 cm/pixel ground sampling distance. The diagram shows the sensing conditions for disease and yield analysis; it is not a performance comparison." aria-label="Enlarge the SymbioMamba UAV acquisition figure">
+              <img src="assets/images/symbiomamba.webp" alt="UAV imagery acquisition across maize fields, with study-area maps and sensing geometry." width="2200" height="788" loading="lazy" decoding="async">
+              <span class="figure-hint" aria-hidden="true">View figure ↗</span>
+            </a>
+            <div class="paper-copy">
+              <p class="paper-venue">Agriculture · 2026</p>
+              <h3 id="symbiomamba-title">SymbioMamba: An Efficient Dual-Stream State-Space Framework for Real-Time Maize Disease and Yield Analysis on UAV Platforms</h3>
+              <p class="authors"><strong>Zihuan Wang*</strong>, Yuru Wang*, Bocheng Zhou, Xu Yan, Peijiang Guo, Hanyu Yang, Yihong Song</p>
+              <p class="paper-summary">A CNN–Mamba dual-stream framework combines local disease features and field-scale context for maize disease and yield analysis.</p>
+            </div>
+          </article>
+
+          <article class="paper" aria-labelledby="litemamba-title">
+            <a class="paper-figure" href="assets/images/litemamba.webp" data-figure data-caption="Figure 1. Overview of LiteMamba-cGAN for forecasting grassland NDVI. Yearly NDVI sequences pass through patch embedding and temporal LiteMamba blocks; a U-Net generator produces the target-year map, while a conditional discriminator supports adversarial training. This architecture diagram is from the IGARSS 2026 proceedings, page 301." aria-label="Enlarge the LiteMamba-cGAN architecture">
+              <img src="assets/images/litemamba.webp" alt="LiteMamba-cGAN architecture linking annual NDVI sequences, temporal encoding, a U-Net generator, and a conditional discriminator." width="2661" height="2028" loading="lazy" decoding="async">
+              <span class="figure-hint" aria-hidden="true">View figure ↗</span>
+            </a>
+            <div class="paper-copy">
+              <p class="paper-venue">IEEE IGARSS · 2026 <span class="status">Poster</span></p>
+              <h3 id="litemamba-title">LiteMamba-cGAN: A Lightweight Spatiotemporal Generative Model for Grassland Degradation Forecasting from NDVI Sequences</h3>
+              <p class="authors"><strong>Zihuan Wang</strong>, Lei Liang, Yilin Zhao, Tianyi Wang</p>
+              <p class="paper-summary">Mamba-inspired temporal modeling meets conditional generation for forecasting grassland NDVI from satellite time series.</p>
+            </div>
+          </article>
+
+          <article class="paper" aria-labelledby="rl-title">
+            <a class="paper-figure" href="assets/images/rl-correction.webp" data-figure data-caption="Figure 1. Spatially selective residual correction for NDVI prediction. Historical NDVI, CHIRPS precipitation, and valid-mask sequences feed a PredRNN++ base predictor and a residual refiner. A one-step RL-style spatial gate chooses a correction coefficient from {0, 0.25, 0.5, 0.75, 1.0} for each cell; the final map adds the gated residual to the base prediction. The gate models a contextual-bandit decision rather than sequential control." aria-label="Enlarge the RL-selective residual correction framework">
+              <img src="assets/images/rl-correction.webp" alt="NDVI forecasting with a PredRNN++ baseline, residual refiner, spatial RL gate, and gated residual fusion." width="4000" height="2250" loading="lazy" decoding="async">
+              <span class="figure-hint" aria-hidden="true">View figure ↗</span>
+            </a>
+            <div class="paper-copy">
+              <p class="paper-venue">IEEE AP-GARSS · 2026 <span class="status">Poster</span></p>
+              <h3 id="rl-title">Spatially Selective Residual Correction for Spatiotemporal NDVI Prediction via Reinforcement Learning</h3>
+              <p class="authors">Chenyu Zhou*, <strong>Zihuan Wang*</strong>, Fangyu He, Tianyi Wang</p>
+              <p class="paper-summary">A one-step RL gate chooses where and how strongly to correct residual errors in predicted NDVI maps.</p>
+            </div>
+          </article>
+          <p class="contribution-note">* Equal contribution.</p>
+        </div>
+      </details>
+
+      <section class="personal-interests" aria-labelledby="personal-title">
+        <h2 id="personal-title">Beyond research</h2>
+        <img class="album-art" src="assets/images/graduation.jpg" alt="Kanye West's Graduation album artwork featuring the Dropout Bear." width="1200" height="1200" loading="lazy" decoding="async">
+        <p>Outside research, I enjoy playing basketball and staying active. Music is a big part of my life: I'm a huge <strong>Kanye West</strong> fan, and I also love listening to <strong>Daniel Caesar</strong>, <strong>Tyler, the Creator</strong>, and <strong>NJZ</strong>.</p>
+      </section>
+
+      <section id="photos" class="photo-journal" aria-labelledby="photos-title">
+        <h2 id="photos-title">On repeat</h2>
+        <p class="photo-intro">Music, records, and life in between.</p>
+        <div class="photo-viewer" role="region" aria-roledescription="carousel" aria-label="Music and life photos">
+          <button class="photo-stack" type="button" aria-label="View current photo in full" aria-describedby="photo-caption photo-count">
+            <span class="photo-card" data-depth="0" data-label="Kanye West" data-caption="A stage screen reading Kanye West.">
+              <img src="assets/images/moments/kanye-stage.jpg" alt="A stage screen with the words Kanye West." width="1206" height="1206" loading="lazy" decoding="async">
+            </span>
+            <span class="photo-card" data-depth="1" data-label="The collection" data-caption="Chinese Football CDs and merchandise." aria-hidden="true">
+              <img src="assets/images/moments/chinese-football.jpg" alt="Chinese Football CDs and illustrated band merchandise arranged together." width="3526" height="2236" loading="lazy" decoding="async">
+            </span>
+            <span class="photo-card" data-depth="2" data-label="Records" data-caption="A red record sleeve, up close." aria-hidden="true">
+              <img src="assets/images/moments/record.jpg" alt="A person holding a red record sleeve toward the camera." width="1521" height="1740" loading="lazy" decoding="async">
+            </span>
+            <span class="photo-card" data-depth="3" data-label="Live music" data-caption="A live music performance in a stadium." aria-hidden="true">
+              <img src="assets/images/moments/live-show.jpg" alt="A stadium at night with a performer on the stage and a large screen above." width="1706" height="1279" loading="lazy" decoding="async">
+            </span>
+          </button>
+          <div class="photo-toolbar">
+            <div class="photo-meta" aria-live="off" aria-atomic="true">
+              <p id="photo-caption">Kanye West</p>
+              <p id="photo-count">01 / 04</p>
+            </div>
+            <div class="photo-controls">
+              <button id="photo-prev" type="button" aria-label="Previous photo">←</button>
+              <button id="photo-play" type="button" aria-label="Pause slideshow">Pause</button>
+              <button id="photo-next" type="button" aria-label="Next photo">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Zihuan Wang</span>
+      <a href="mailto:willwangzihuan@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+    </footer>
+  </div>
+
+  <dialog id="figure-dialog" aria-labelledby="figure-title" aria-describedby="figure-caption">
+    <div class="dialog-bar"><h2 id="figure-title">Image viewer</h2><button type="button" class="dialog-close" aria-label="Close image">Close <span aria-hidden="true">×</span></button></div>
+    <figure><img id="figure-image" alt=""><figcaption id="figure-caption"></figcaption></figure>
+  </dialog>
+</body>
+</html>
