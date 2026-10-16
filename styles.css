@@ -54,13 +54,19 @@ h2 { font-size: 23px; line-height: 1.4; font-weight: 550; letter-spacing: -.35px
 .directions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; margin-top: 20px; }
 .directions h3 { font-size: 17px; }
 .directions p { font-size: 16px; line-height: 1.8; margin-top: 8px; color: var(--ink); }
-.experience-entry { display: grid; grid-template-columns: 223px minmax(0, 1fr); gap: 29px; align-items: start; padding: 28px 0 34px; }
-.company-logo { display: block; width: 200px; max-width: 100%; height: auto; margin-top: 7px; }
-.experience-copy h3 { font-size: 19px; line-height: 1.5; font-weight: 600; }
+.experience-section { padding-bottom: 8px; }
+.experience-entry { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 32px; align-items: start; padding: 34px 0; }
+.experience-logo { display: flex; align-items: center; justify-content: center; height: 96px; }
+.experience-logo img { display: block; width: 108px; height: 86px; object-fit: contain; }
+/* Show the company symbol from the existing horizontal wordmark. */
+.experience-logo--anyverse img { width: 100px; object-fit: cover; object-position: left; }
+.experience-copy { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 7px 24px; }
+.experience-copy h3 { grid-column: 1 / -1; font-size: 20px; line-height: 1.5; font-weight: 600; }
 .experience-copy h3 span { display: inline-block; margin-left: 8px; font-size: 16px; font-weight: 400; }
-.experience-copy p { font-size: 16px; line-height: 1.8; }
-.experience-copy .experience-role { color: var(--muted); font-size: 15px; margin: 4px 0 14px; }
-.experience-copy p + p:not(.experience-role) { margin-top: 10px; }
+.experience-copy p { color: var(--ink); font-size: 17px; line-height: 1.7; }
+.experience-copy .experience-date { grid-column: 2; grid-row: 2; color: var(--accent); font-size: 16px; font-weight: 500; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.experience-role { grid-column: 1; grid-row: 2; }
+.experience-description { grid-column: 1 / -1; }
 .paper { display: grid; grid-template-columns: 223px 1fr; gap: 29px; padding: 31px 0; align-items: start; }
 .paper + .paper { border-top: 1px solid var(--line); }
 .paper-figure { width: 100%; min-height: 174px; display: flex; flex-direction: column; justify-content: center; position: relative; border: 1px solid #e8edf2; border-radius: 4px; padding: 9px 9px 24px; overflow: hidden; background: #fff; transition: border-color .18s ease; }
@@ -149,8 +155,15 @@ dialog figcaption { color: var(--muted); font-size: 14px; line-height: 1.8; bord
   .section-heading { padding-top: 24px; flex-wrap: wrap; gap: 4px 20px; }
   h2 { font-size: 22px; }
   .directions { grid-template-columns: 1fr; gap: 22px; }
-  .experience-entry { grid-template-columns: 1fr; gap: 22px; padding: 25px 0 27px; }
-  .company-logo { width: 180px; margin-top: 0; }
+  .experience-entry { grid-template-columns: 76px minmax(0, 1fr); gap: 20px; padding: 28px 0; }
+  .experience-logo { height: 74px; }
+  .experience-logo img { width: 76px; height: 64px; }
+  .experience-logo--anyverse img { width: 74px; }
+  .experience-copy { grid-template-columns: minmax(0, 1fr); gap: 7px; }
+  .experience-copy h3 { font-size: 19px; }
+  .experience-copy h3 span { display: block; margin-left: 0; }
+  .experience-copy .experience-date { grid-column: 1; grid-row: auto; }
+  .experience-role { grid-row: auto; }
   .paper { grid-template-columns: 1fr; gap: 19px; padding: 27px 0; }
   .paper-figure { padding: 14px 14px 24px; min-height: 0; }
   .paper-figure img { height: auto; max-height: 240px; }
