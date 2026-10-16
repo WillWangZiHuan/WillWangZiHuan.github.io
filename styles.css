@@ -33,9 +33,6 @@ h1 { font-size: 40px; font-weight: 550; letter-spacing: -1.6px; line-height: 1.3
 h1 span { display: inline-block; margin-left: 9px; color: var(--ink); font-size: 20px; font-weight: 400; letter-spacing: 1px; vertical-align: 4px; white-space: nowrap; }
 .bio { font-size: 17px; line-height: 1.8; }
 .bio + .bio { margin-top: 11px; }
-.affiliation { display: flow-root; margin-top: 22px; }
-.lab-logo { display: block; float: right; width: 96px; height: auto; margin: 0 0 10px 24px; }
-.intro-subheading { color: var(--accent); font-size: 16px; margin-bottom: 6px; letter-spacing: 0; font-weight: 600; }
 .contact { margin-top: 23px; }
 .contact-links { display: flex; gap: 15px; align-items: center; font-size: 14px; }
 .contact-links a { color: var(--ink); }
@@ -149,8 +146,6 @@ dialog figcaption { color: var(--muted); font-size: 14px; line-height: 1.8; bord
   .portrait img { width: 120px; height: 147px; }
   .bio { grid-column: 1 / -1; font-size: 17px; }
   .bio + .bio { margin-top: -13px; }
-  .affiliation { grid-column: 1 / -1; margin-top: 0; }
-  .intro-subheading { font-size: 16px; }
   .contact { grid-column: 1 / -1; margin-top: -9px; }
   .section-heading { padding-top: 24px; flex-wrap: wrap; gap: 4px 20px; }
   h2 { font-size: 22px; }
