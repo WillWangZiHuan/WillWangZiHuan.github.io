@@ -84,11 +84,10 @@ h3 a:hover { color: var(--accent); }
 .paper-links { display: flex; gap: 19px; font-size: 14px; margin-top: 8px; }
 .early-research { margin-top: 25px; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
 .early-intro { color: var(--muted); font-size: 16px; line-height: 1.8; margin-top: 15px; }
-.early-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px 24px; margin-top: 24px; }
+.early-gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
 .early-figure { display: block; padding: 8px; border: 1px solid var(--line); border-radius: 4px; cursor: zoom-in; }
 .early-figure:hover { border-color: #90a6bc; }
-.early-figure img { display: block; width: 100%; height: 190px; object-fit: contain; }
-.early-gallery figcaption { color: var(--muted); font-size: 12px; margin-top: 7px; }
+.early-figure img { display: block; width: 100%; height: 150px; object-fit: contain; }
 .personal-interests { display: flow-root; padding: 34px 0; border-bottom: 1px solid var(--line); }
 .personal-interests p { font-size: 16px; line-height: 1.85; margin-top: 12px; }
 .album-art { float: right; width: 136px; height: 136px; margin: 12px 0 10px 30px; border-radius: 4px; }
@@ -159,8 +158,8 @@ dialog figcaption { color: var(--muted); font-size: 14px; line-height: 1.8; bord
   .poster-preview img { max-height: 380px; }
   .paper-copy { min-width: 0; }
   .early-research { margin-top: 13px; }
-  .early-gallery { grid-template-columns: 1fr; gap: 20px; }
-  .early-figure img { height: auto; max-height: 240px; }
+  .early-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .early-figure img { height: 120px; }
   .album-art { width: 108px; height: 108px; margin-left: 20px; }
   .photo-viewer { margin-top: 24px; }
   .photo-toolbar { padding: 0; }
