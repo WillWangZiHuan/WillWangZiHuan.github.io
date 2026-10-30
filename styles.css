@@ -84,7 +84,7 @@ h3 a:hover { color: var(--accent); }
 .paper-links { display: flex; gap: 19px; font-size: 14px; margin-top: 8px; }
 .early-research { margin-top: 25px; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
 .early-intro { color: var(--muted); font-size: 16px; line-height: 1.8; margin-top: 15px; }
-.early-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 24px; margin-top: 24px; }
+.early-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px 24px; margin-top: 24px; }
 .early-figure { display: block; padding: 8px; border: 1px solid var(--line); border-radius: 4px; cursor: zoom-in; }
 .early-figure:hover { border-color: #90a6bc; }
 .early-figure img { display: block; width: 100%; height: 190px; object-fit: contain; }
