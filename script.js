@@ -143,7 +143,7 @@ photoStack.addEventListener('click', () => {
   syncPhotoPlayback();
   const card = photoCards[photoIndex];
   const img = card.querySelector('img');
-  openImage(img.src, img.alt, card.dataset.caption, 'On repeat');
+  openImage(img.src, img.alt, card.dataset.caption, 'Moments along the way');
 });
 
 const photoObserver = new IntersectionObserver(([entry]) => {
