@@ -94,13 +94,12 @@ h3 a:hover { color: var(--accent); }
 .photo-journal { padding: 34px 0 38px; border-bottom: 1px solid var(--line); overflow: hidden; }
 .photo-intro { color: var(--muted); font-size: 16px; margin-top: 8px; }
 .photo-viewer { max-width: 560px; margin: 30px auto 0; }
-.photo-stack { display: block; position: relative; isolation: isolate; width: calc(100% - 48px); aspect-ratio: 4 / 3; margin: 20px 36px 40px 12px; padding: 0; border: 0; background: none; cursor: zoom-in; touch-action: pan-y; }
-.photo-card { position: absolute; inset: 0; display: block; padding: 6px; border: 1px solid var(--line); border-radius: 16px; background: #fff; box-shadow: 0 12px 32px #041e3a1c; pointer-events: none; transition: transform .7s cubic-bezier(.22, 1, .36, 1), opacity .5s ease, filter .7s ease; }
-.photo-card img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 10px; user-select: none; -webkit-user-drag: none; }
+.photo-stack { display: block; position: relative; isolation: isolate; width: calc(100% - 48px); aspect-ratio: 1 / 1; margin: 20px 36px 40px 12px; padding: 0; border: 0; background: none; cursor: zoom-in; touch-action: pan-y; }
+.photo-card { z-index: 1; opacity: 0; transform: translate(-12%, 18px) rotate(-12deg) scale(.9); position: absolute; inset: 0; display: block; padding: 6px; border: 1px solid var(--line); border-radius: 16px; background: #fff; box-shadow: 0 12px 32px #041e3a1c; pointer-events: none; transition: transform .7s cubic-bezier(.22, 1, .36, 1), opacity .5s ease, filter .7s ease; }
+.photo-card img { display: block; width: 100%; height: 100%; object-fit: contain; border-radius: 10px; user-select: none; -webkit-user-drag: none; }
 .photo-card[data-depth="0"] { z-index: 4; transform: rotate(-2deg); opacity: 1; }
 .photo-card[data-depth="1"] { z-index: 3; transform: translate(14px, 8px) rotate(4deg) scale(.98); opacity: 1; filter: brightness(.95); }
 .photo-card[data-depth="2"] { z-index: 2; transform: translate(28px, 17px) rotate(8deg) scale(.94); opacity: 1; filter: brightness(.88); }
-.photo-card[data-depth="3"] { z-index: 1; transform: translate(-12%, 18px) rotate(-12deg) scale(.9); opacity: 0; }
 .photo-card.is-turning { z-index: 5; animation: turn-photo .7s cubic-bezier(.4, 0, .2, 1) both; }
 @keyframes turn-photo {
   0% { transform: rotate(-2deg); opacity: 1; }
