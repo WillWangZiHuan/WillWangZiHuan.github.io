@@ -1,14 +1,7 @@
-const more = document.querySelector('#more');
 const dialog = document.querySelector('#figure-dialog');
 const figureImage = document.querySelector('#figure-image');
 const figureCaption = document.querySelector('#figure-caption');
 const figureTitle = document.querySelector('#figure-title');
-
-document.querySelector('.more-link').addEventListener('click', () => {
-  more.open = true;
-});
-
-if (window.location.hash === '#more') more.open = true;
 
 function openImage(src, alt, caption, title) {
   figureImage.src = src;
@@ -23,7 +16,7 @@ document.querySelectorAll('[data-figure]').forEach(link => {
   link.addEventListener('click', event => {
     event.preventDefault();
     openImage(link.href, link.getAttribute('aria-label'), link.dataset.caption,
-      link.closest('article').querySelector('.paper-venue').textContent);
+      link.dataset.title);
   });
 });
 

@@ -17,7 +17,7 @@
       <a class="wordmark" href="#main" aria-label="Zihuan Wang, back to top">ZW<span>.</span></a>
       <nav aria-label="Main navigation">
         <a href="#research">Research</a>
-        <a href="#more" class="more-link">Other Research <span aria-hidden="true">↗</span></a>
+        <a href="#early-research">Early Research</a>
       </nav>
     </header>
 
@@ -109,7 +109,7 @@
         <p class="section-note">Understanding what success rates tell us about robot policies.</p>
 
         <article class="paper" aria-labelledby="icra-title">
-          <a class="paper-figure" href="assets/images/icra.webp" data-figure data-caption="Figure 1. Matched response profiling for VLA evaluation. The schematic contrasts reference-count summaries with task-specific profiles over controlled visual changes. The camera example uses 12 matched initial states per level. OpenVLA-OFT and X-VLA each achieve 458/480 clean successes but differ under visual changes; curves show suite-balanced means and ribbons show 95% matched state-block bootstrap intervals. Annotated gaps are X-VLA minus OpenVLA-OFT, in percentage points." aria-label="Enlarge Figure 1 from Beyond Clean Success">
+          <a class="paper-figure" href="assets/images/icra.webp" data-title="ICRA 2027" data-figure data-caption="Figure 1. Matched response profiling for VLA evaluation. The schematic contrasts reference-count summaries with task-specific profiles over controlled visual changes. The camera example uses 12 matched initial states per level. OpenVLA-OFT and X-VLA each achieve 458/480 clean successes but differ under visual changes; curves show suite-balanced means and ribbons show 95% matched state-block bootstrap intervals. Annotated gaps are X-VLA minus OpenVLA-OFT, in percentage points." aria-label="Enlarge Figure 1 from Beyond Clean Success">
             <img src="assets/images/icra.webp" alt="Matched response profiling: equal clean success, different responses across resolution, camera angle, and blur." width="3072" height="2274" decoding="async">
             <span class="figure-hint" aria-hidden="true">View figure ↗</span>
           </a>
@@ -123,7 +123,7 @@
         </article>
 
         <article class="paper" aria-labelledby="iros-title">
-          <a class="paper-figure poster-preview" href="assets/images/iros-poster.webp" data-figure data-caption="Robust to What? Original A0 poster for the IROS 2026 AIM-Ctrl Workshop. Zihuan Wang, Chi Bene Chen, and Gao Huang · Tsinghua University. Preview rendered from the original PDF; use the Poster PDF link for the full-resolution document." aria-label="Enlarge the IROS 2026 workshop poster">
+          <a class="paper-figure poster-preview" href="assets/images/iros-poster.webp" data-title="IROS 2026 · AIM-Ctrl Workshop" data-figure data-caption="Robust to What? Original A0 poster for the IROS 2026 AIM-Ctrl Workshop. Zihuan Wang, Chi Bene Chen, and Gao Huang · Tsinghua University. Preview rendered from the original PDF; use the Poster PDF link for the full-resolution document." aria-label="Enlarge the IROS 2026 workshop poster">
             <img src="assets/images/iros-poster.webp" alt="Original IROS poster: matched outcomes, shifted success, and the role of execution protocols in VLA evaluation." width="1557" height="2200" loading="lazy" decoding="async">
             <span class="figure-hint" aria-hidden="true">View poster ↗</span>
           </a>
@@ -132,74 +132,43 @@
             <h3 id="iros-title"><a href="assets/papers/iros.pdf" target="_blank" rel="noopener">Robust to What? Interpreting Shifted Success in Executable Vision-Language-Action Policies</a></h3>
             <p class="authors"><strong>Zihuan Wang</strong>, Chi Bene Chen, Gao Huang</p>
             <p class="paper-summary">Event, reference construction, and execution protocol determine which reliability claim a shifted success rate supports.</p>
-            <div class="paper-links"><a href="assets/papers/iros.pdf" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a><a href="assets/papers/iros-poster.pdf" target="_blank" rel="noopener">Poster PDF <span aria-hidden="true">↗</span></a><a href="assets/images/iros.webp" data-figure data-caption="Figure 1. Evaluation constructions for interpreting shifted VLA success. Left: clean and dark-table appearance conditions; base and alternate cohorts share 10 of 20 states, while clean/dark outcomes in the base cohort are matched by state index. Right: 50 keys per checkpoint match task, initial state, policy seed, and a step-30 event; the target moves 2.5 cm. Native and clear-and-re-query execution give different response opportunities. The paired outcome table distinguishes retained success, clean-only loss, intervention-only success, and joint failure, which a single marginal success rate combines." aria-label="Enlarge Figure 1 from Robust to What?">Figure <span aria-hidden="true">↗</span></a></div>
+            <div class="paper-links"><a href="assets/papers/iros.pdf" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a><a href="assets/papers/iros-poster.pdf" target="_blank" rel="noopener">Poster PDF <span aria-hidden="true">↗</span></a><a href="assets/images/iros.webp" data-title="IROS 2026 · AIM-Ctrl Workshop" data-figure data-caption="Figure 1. Evaluation constructions for interpreting shifted VLA success. Left: clean and dark-table appearance conditions; base and alternate cohorts share 10 of 20 states, while clean/dark outcomes in the base cohort are matched by state index. Right: 50 keys per checkpoint match task, initial state, policy seed, and a step-30 event; the target moves 2.5 cm. Native and clear-and-re-query execution give different response opportunities. The paired outcome table distinguishes retained success, clean-only loss, intervention-only success, and joint failure, which a single marginal success rate combines." aria-label="Enlarge Figure 1 from Robust to What?">Figure <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
       </section>
 
-      <details id="more" class="other-side">
-        <summary>
-          <span class="more-heading">Other Research</span>
-          <span class="more-toggle"><span class="when-closed">4 papers</span><span class="when-open">Hide</span><span class="plus" aria-hidden="true"></span></span>
-        </summary>
-        <div class="more-content">
-          <p class="other-intro">My early undergraduate research focused on <strong>remote sensing and intelligent agriculture</strong>. I studied grassland vegetation forecasting from satellite time series and maize disease and yield analysis from UAV imagery, with an emphasis on spatiotemporal modeling and efficient visual models.</p>
-          <p class="other-intro">The four papers below grew out of this work. They gave me experience in developing models, designing experiments, interpreting results, and writing research papers. This experience provides a foundation for my current research in robot learning and evaluation.</p>
-
-          <article class="paper" aria-labelledby="jstars-title">
-            <a class="paper-figure" href="assets/images/jstars.webp" data-figure data-caption="Figure 3. Reliability-Aware Attention for annual grassland NDVI forecasting from Landsat sequences. QA-retained observation counts form relative support values, which condition token gating, attention key bias, and value gating. The framework predicts annual ΔNDVI while preserving content-dependent interactions; the support operations add no trainable parameters. This is a method schematic, not a result plot." aria-label="Enlarge the Reliability-Aware Attention framework">
-              <img src="assets/images/jstars.webp" alt="Landsat forecasting pipeline with observation-support token gating, key bias, and value gating." width="2200" height="1026" loading="lazy" decoding="async">
-              <span class="figure-hint" aria-hidden="true">View figure ↗</span>
-            </a>
-            <div class="paper-copy">
-              <p class="paper-venue">IEEE J-STARS · 2026 <span class="status">Accepted</span></p>
-              <h3 id="jstars-title">Spatiotemporal Prediction of Grassland NDVI Dynamics Under Reduced Observation Support via Reliability-Aware Attention</h3>
-              <p class="authors"><strong>Zihuan Wang</strong>, Chenyu Zhou, Fangyu He, Jianxi Huang, Tianyi Wang</p>
-              <p class="paper-summary">QA-retained observation counts guide attention for grassland NDVI forecasting across geographic holdouts.</p>
-            </div>
-          </article>
-
-          <article class="paper" aria-labelledby="symbiomamba-title">
-            <a class="paper-figure" href="assets/images/symbiomamba.webp" data-figure data-caption="Figure 2. UAV data acquisition for SymbioMamba across the Hetao Irrigation District and Jungar Banner in Inner Mongolia. A DJI Matrice 300 RTK with a Zenmuse H20T camera acquires maize imagery at 30–50 m flight altitude and 1.5 cm/pixel ground sampling distance. The diagram shows the sensing conditions for disease and yield analysis; it is not a performance comparison." aria-label="Enlarge the SymbioMamba UAV acquisition figure">
-              <img src="assets/images/symbiomamba.webp" alt="UAV imagery acquisition across maize fields, with study-area maps and sensing geometry." width="2200" height="788" loading="lazy" decoding="async">
-              <span class="figure-hint" aria-hidden="true">View figure ↗</span>
-            </a>
-            <div class="paper-copy">
-              <p class="paper-venue">Agriculture · 2026</p>
-              <h3 id="symbiomamba-title">SymbioMamba: An Efficient Dual-Stream State-Space Framework for Real-Time Maize Disease and Yield Analysis on UAV Platforms</h3>
-              <p class="authors"><strong>Zihuan Wang*</strong>, Yuru Wang*, Bocheng Zhou, Xu Yan, Peijiang Guo, Hanyu Yang, Yihong Song</p>
-              <p class="paper-summary">A CNN–Mamba dual-stream framework combines local disease features and field-scale context for maize disease and yield analysis.</p>
-            </div>
-          </article>
-
-          <article class="paper" aria-labelledby="litemamba-title">
-            <a class="paper-figure" href="assets/images/litemamba.webp" data-figure data-caption="Figure 1. Overview of LiteMamba-cGAN for forecasting grassland NDVI. Yearly NDVI sequences pass through patch embedding and temporal LiteMamba blocks; a U-Net generator produces the target-year map, while a conditional discriminator supports adversarial training. This architecture diagram is from the IGARSS 2026 proceedings, page 301." aria-label="Enlarge the LiteMamba-cGAN architecture">
-              <img src="assets/images/litemamba.webp" alt="LiteMamba-cGAN architecture linking annual NDVI sequences, temporal encoding, a U-Net generator, and a conditional discriminator." width="2661" height="2028" loading="lazy" decoding="async">
-              <span class="figure-hint" aria-hidden="true">View figure ↗</span>
-            </a>
-            <div class="paper-copy">
-              <p class="paper-venue">IEEE IGARSS · 2026 <span class="status">Poster</span></p>
-              <h3 id="litemamba-title">LiteMamba-cGAN: A Lightweight Spatiotemporal Generative Model for Grassland Degradation Forecasting from NDVI Sequences</h3>
-              <p class="authors"><strong>Zihuan Wang</strong>, Lei Liang, Yilin Zhao, Tianyi Wang</p>
-              <p class="paper-summary">Mamba-inspired temporal modeling meets conditional generation for forecasting grassland NDVI from satellite time series.</p>
-            </div>
-          </article>
-
-          <article class="paper" aria-labelledby="rl-title">
-            <a class="paper-figure" href="assets/images/rl-correction.webp" data-figure data-caption="Figure 1. Spatially selective residual correction for NDVI prediction. Historical NDVI, CHIRPS precipitation, and valid-mask sequences feed a PredRNN++ base predictor and a residual refiner. A one-step RL-style spatial gate chooses a correction coefficient from {0, 0.25, 0.5, 0.75, 1.0} for each cell; the final map adds the gated residual to the base prediction. The gate models a contextual-bandit decision rather than sequential control." aria-label="Enlarge the RL-selective residual correction framework">
-              <img src="assets/images/rl-correction.webp" alt="NDVI forecasting with a PredRNN++ baseline, residual refiner, spatial RL gate, and gated residual fusion." width="4000" height="2250" loading="lazy" decoding="async">
-              <span class="figure-hint" aria-hidden="true">View figure ↗</span>
-            </a>
-            <div class="paper-copy">
-              <p class="paper-venue">IEEE AP-GARSS · 2026 <span class="status">Poster</span></p>
-              <h3 id="rl-title">Spatially Selective Residual Correction for Spatiotemporal NDVI Prediction via Reinforcement Learning</h3>
-              <p class="authors">Chenyu Zhou*, <strong>Zihuan Wang*</strong>, Fangyu He, Tianyi Wang</p>
-              <p class="paper-summary">A one-step RL gate chooses where and how strongly to correct residual errors in predicted NDVI maps.</p>
-            </div>
-          </article>
-          <p class="contribution-note">* Equal contribution.</p>
+      <section id="early-research" class="early-research" aria-labelledby="early-title">
+        <div class="section-heading">
+          <h2 id="early-title">Early Research</h2>
         </div>
-      </details>
+        <p class="early-intro">My early undergraduate research focused on <strong>remote sensing and intelligent agriculture</strong>, with work submitted to <strong>IEEE JSTARS</strong>, <strong>Agriculture</strong>, <strong>IEEE IGARSS</strong>, and <strong>IEEE AP-GARSS</strong>.</p>
+        <div class="early-gallery">
+          <figure>
+            <a class="early-figure" data-title="IEEE JSTARS" href="assets/images/jstars.webp" data-figure data-caption="Figure 3. Reliability-Aware Attention for annual grassland NDVI forecasting from Landsat sequences. QA-retained observation counts form relative support values, which condition token gating, attention key bias, and value gating. The framework predicts annual ΔNDVI while preserving content-dependent interactions; the support operations add no trainable parameters. This is a method schematic, not a result plot." aria-label="Enlarge the Reliability-Aware Attention framework">
+              <img src="assets/images/jstars.webp" alt="Landsat forecasting pipeline with observation-support token gating, key bias, and value gating." width="2200" height="1026" loading="lazy" decoding="async">
+              </a>
+            <figcaption>IEEE JSTARS</figcaption>
+          </figure>
+          <figure>
+            <a class="early-figure" data-title="Agriculture" href="assets/images/symbiomamba.webp" data-figure data-caption="Figure 2. UAV data acquisition for SymbioMamba across the Hetao Irrigation District and Jungar Banner in Inner Mongolia. A DJI Matrice 300 RTK with a Zenmuse H20T camera acquires maize imagery at 30–50 m flight altitude and 1.5 cm/pixel ground sampling distance. The diagram shows the sensing conditions for disease and yield analysis; it is not a performance comparison." aria-label="Enlarge the SymbioMamba UAV acquisition figure">
+              <img src="assets/images/symbiomamba.webp" alt="UAV imagery acquisition across maize fields, with study-area maps and sensing geometry." width="2200" height="788" loading="lazy" decoding="async">
+              </a>
+            <figcaption>Agriculture</figcaption>
+          </figure>
+          <figure>
+            <a class="early-figure" data-title="IEEE IGARSS" href="assets/images/litemamba.webp" data-figure data-caption="Figure 1. Overview of LiteMamba-cGAN for forecasting grassland NDVI. Yearly NDVI sequences pass through patch embedding and temporal LiteMamba blocks; a U-Net generator produces the target-year map, while a conditional discriminator supports adversarial training. This architecture diagram is from the IGARSS 2026 proceedings, page 301." aria-label="Enlarge the LiteMamba-cGAN architecture">
+              <img src="assets/images/litemamba.webp" alt="LiteMamba-cGAN architecture linking annual NDVI sequences, temporal encoding, a U-Net generator, and a conditional discriminator." width="2661" height="2028" loading="lazy" decoding="async">
+              </a>
+            <figcaption>IEEE IGARSS</figcaption>
+          </figure>
+          <figure>
+            <a class="early-figure" data-title="IEEE AP-GARSS" href="assets/images/rl-correction.webp" data-figure data-caption="Figure 1. Spatially selective residual correction for NDVI prediction. Historical NDVI, CHIRPS precipitation, and valid-mask sequences feed a PredRNN++ base predictor and a residual refiner. A one-step RL-style spatial gate chooses a correction coefficient from {0, 0.25, 0.5, 0.75, 1.0} for each cell; the final map adds the gated residual to the base prediction. The gate models a contextual-bandit decision rather than sequential control." aria-label="Enlarge the RL-selective residual correction framework">
+              <img src="assets/images/rl-correction.webp" alt="NDVI forecasting with a PredRNN++ baseline, residual refiner, spatial RL gate, and gated residual fusion." width="4000" height="2250" loading="lazy" decoding="async">
+              </a>
+            <figcaption>IEEE AP-GARSS</figcaption>
+          </figure>
+        </div>
+      </section>
 
       <section class="personal-interests" aria-labelledby="personal-title">
         <h2 id="personal-title">Beyond research</h2>
