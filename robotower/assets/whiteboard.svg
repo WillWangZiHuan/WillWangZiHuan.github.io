@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="metal" x2="0" y2="1"><stop stop-color="#d5dbd9"/><stop offset=".18" stop-color="#f3f5f4"/><stop offset=".5" stop-color="#bfc7c4"/><stop offset="1" stop-color="#d4dbd7"/></linearGradient>
+    <linearGradient id="surface" x2=".2" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f8faf7"/></linearGradient>
+    <filter id="shadow" x="-.05" y="-.1" width="1.1" height="1.25"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#29382d" flood-opacity=".12"/></filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect x="8" y="8" width="1184" height="330" rx="9" fill="url(#metal)" stroke="#aeb8b1"/>
+    <rect x="17" y="17" width="1166" height="312" rx="2" fill="url(#surface)" stroke="#d5dcd6"/>
+  </g>
+  <g fill="none" stroke="#87988b" opacity=".035" stroke-width="14" stroke-linecap="round">
+    <path d="M68 96c230-24 430-13 622-2M95 123c178-12 335-16 526-8M455 240c190 10 395 3 645-17M490 262c250 9 410-3 569-5"/>
+  </g>
+  <g fill="#929e98">
+    <path d="M8 34V17a9 9 0 0 1 9-9h19v7H18v19zM1164 8h19a9 9 0 0 1 9 9v17h-10V17h-18zM8 311v18a9 9 0 0 0 9 9h19v-8H18v-19zM1164 338h19a9 9 0 0 0 9-9v-18h-10v19h-18z"/>
+  </g>
+  <g fill="#d2d9d4" stroke="#a1ada5" stroke-width=".8"><circle cx="13" cy="13" r="2"/><circle cx="1187" cy="13" r="2"/><circle cx="13" cy="333" r="2"/><circle cx="1187" cy="333" r="2"/></g>
+  <path d="M825 334h300l-10 14H834z" fill="#c9d1cc" stroke="#a6b1a9"/>
+  <path d="M834 348h281" stroke="#8f9d94" stroke-width="2"/>
+  <g transform="translate(865 325) rotate(-1)"><rect width="92" height="9" rx="3" fill="#e1e5df" stroke="#b3bdb5"/><rect width="22" height="9" rx="2" fill="#274c5c"/><rect x="85" width="7" height="9" rx="2" fill="#274c5c"/></g>
+  <g transform="translate(983 325) rotate(1)"><rect width="82" height="9" rx="3" fill="#e1e5df" stroke="#b3bdb5"/><rect width="20" height="9" rx="2" fill="#bd502f"/><rect x="76" width="6" height="9" rx="2" fill="#bd502f"/></g>
+</svg>
