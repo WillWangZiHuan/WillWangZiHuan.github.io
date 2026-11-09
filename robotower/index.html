@@ -11,22 +11,20 @@
   <main>
     <header class="masthead"><h1><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/robotower-still.png"><img src="assets/robotower.gif" alt="RoboTower — 机械臂搭建字标" width="1160" height="420"></picture></h1><p class="intro">不预设结构的开放式机器人搭建基准。</p></header>
     <section class="whiteboard" aria-labelledby="todo-title">
-      <div class="board-heading"><h2 id="todo-title">待办</h2><span>2 / 3</span></div>
+      <div class="board-heading"><h2 id="todo-title">实验标准</h2><span>v1 · 100 次</span></div>
       <div class="board-tasks">
-        <article class="task"><div class="task-heading"><span class="task-number">01</span><h3>确定材料清单与尺寸</h3><span class="task-status">已确认</span></div>
-          <p>当前 11 件：4 个方块、2 根长条、2 块薄板、2 个 L 形、1 个偏心 T 形。</p>
-          <p>台阶形已移除，其余尺寸不变。</p>
+        <article class="task"><div class="task-heading"><span class="task-number">01</span><h3>首批试运行</h3><span class="task-status">已固定</span></div>
+          <p>11 件材料，台阶形已移除。每局 100 次交互，释放与撤手也计入预算。</p>
+          <p>3 个布局 × Astra、Sol、Terra，共 9 局。步数、Token 与消费单独列。</p>
         </article>
-        <article class="task"><div class="task-heading"><span class="task-number">02</span><h3>主分与验收阈值</h3><span class="task-status">已确认</span></div>
-          <p>主分：最终最高合格结构的稳定高度（mm）。步数、Token 与费用单独列。</p>
-          <p>结束后观察 3 秒仿真时间；最后 1 秒角点运动范围 ≤ 2 mm，取该窗口最低高度。</p>
-          <p>结构须连接桌面；整个观察期间距机器人 ≥ 10 mm。</p>
-          <p>请求额度、异常终止与多轮汇总方式待讨论。</p>
+        <article class="task"><div class="task-heading"><span class="task-number">02</span><h3>模型输入</h3><span class="task-status">已固定</span></div>
+          <p>三路 RGB、本体反馈、相机内外参、机器人运动学与固定桌面标定。</p>
+          <p>不提供深度、点云、ICL 或物体真值；桌面表面高度统一为 0.765 m。</p>
         </article>
-        <article class="task task-wide"><div class="task-heading"><span class="task-number">03</span><h3>服务器恢复后验证</h3><span class="task-status">待验证</span></div>
-          <p>同一终态观察 3 / 5 / 10 秒，检查是否延迟倒塌；比较运动容差，检查慢滑与晃动。</p>
-          <p>复核 10 mm 净空判定，排查包围盒误判。按物理判定选阈值，不按模型得分选。</p>
-          <p>重复抓取、搬运、搭建、释放与撤手，记录材料相关的失败原因。</p>
+        <article class="task task-wide"><div class="task-heading"><span class="task-number">03</span><h3>两个高度</h3><span class="task-status">主分不变</span></div>
+          <p>过程最高点：操作期间材料达到的最高点，含夹持或不稳定状态。提交稳定高度：结束后最高合格结构的稳定高度，作为主分。</p>
+          <p>验收 3 秒，末 1 秒角点运动 ≤ 2 mm，取窗口最低高度；结构连接桌面，全程距机器人 ≥ 10 mm。</p>
+          <p>待办：服务器恢复后验证标定、桌面碰撞、评分阈值与完整流程，再开始 9 局试运行。</p>
         </article>
       </div>
     </section>
